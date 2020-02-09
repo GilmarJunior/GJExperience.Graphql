@@ -5,11 +5,9 @@ using System.Threading.Tasks;
 
 namespace GJExperience.Graphql.Model
 {
-    public class Jedi
+    public class ForceLevel
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Side { get; set; }
-        public int IdForceLevel { get; set; }
+        public string Description { get; set; }
     }
 }

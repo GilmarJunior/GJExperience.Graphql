@@ -12,11 +12,21 @@ namespace GJExperience.Graphql.Data
         {
             return new List<Jedi>
             {
-                new Jedi { Id = 1, Name = "Luke", Side= "Light" },
-                new Jedi { Id = 2, Name = "Yoda", Side= "Light" },
-                new Jedi { Id = 3, Name = "Darth Vader", Side= "Light" },
-                new Jedi { Id = 4, Name = "Kylo Ren", Side= "Light/Dark?" },
-                new Jedi { Id = 5, Name = "Darth Sidious", Side= "Dark" }
+                new Jedi { Id = 1, Name = "Luke", Side= "Light", IdForceLevel = 2 },
+                new Jedi { Id = 2, Name = "Yoda", Side= "Light", IdForceLevel = 3 },
+                new Jedi { Id = 3, Name = "Darth Vader", Side= "Light", IdForceLevel = 3 },
+                new Jedi { Id = 4, Name = "Kylo Ren", Side= "Light/Dark?", IdForceLevel = 1 },
+                new Jedi { Id = 5, Name = "Darth Sidious", Side= "Dark", IdForceLevel = 3 }
+            };
+        }
+
+        public static List<ForceLevel> GetForceLevels()
+        {
+            return new List<ForceLevel>
+            {
+                new ForceLevel { Id = 1, Description = "Low" },
+                new ForceLevel { Id = 2, Description = "Medium" },
+                new ForceLevel { Id = 3, Description = "High" }
             };
         }
     }
